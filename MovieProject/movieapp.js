@@ -9,8 +9,8 @@ Vue.component('movie-detail',{
             this.favorites.add(this.book);
         },
     },
-    template: '<div><div class="card" style="width: 18rem;">\n' +
-        '  <img class=".card-columns" v-bind:src="movie.Poster" alt="">\n' +
+    template: '<div class="card w-50">\n' +
+        '  <img class="card-img" v-bind:src="movie.Poster">\n' +
         '  <div class="card-body">\n' +
         '    <h5 class="card-title">{{movie.Title}}</h5>\n' +
         '    <p class="card-text"></p>\n' +
@@ -34,7 +34,7 @@ Vue.component('movie-detail',{
 
         '  </div>\n' +
 
-        '</div></div>'
+        '</div>'
 
 
         });
